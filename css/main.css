@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    padding: 32px 0;
+}
+.logotype {
+    font-size: 46px;
+    margin: 0 100px;
+    font-family: 'Pacifico', cursive;
+
+}
+.logotype a {
+    color: #000;
+    text-decoration: none;
+}
+.main__banner {
+    background-image: url(../images/prism.png);
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner__text-box {
+
+    padding: 10vw 10vw;
+}
+.title {
+    font-size: 72px;
+    font-weight: 500;
+    color:#fff;
+    padding: 0;
+    margin: 0;
+}
+.subtitle {
+    font-size: 42px;
+    font-weight: 300;
+    color:#fff;
+    width: 30vw;
+}
+.banner__link {
+    background-color: #2652e0;
+    padding: 12px 56px;
+    font-size: 24px;
+    text-decoration: none;
+    color:#fff;
+    border-radius: 9px;
+}
+.banner__link:hover {
+    background-color: #1e3c9c;
+    transition: .5s;
+}
+.nav-bar {
+    margin-left: 30vw;
+}
+.nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
+}
+.nav-bar ul li {
+    list-style-type: none;
+    margin-top: 12px;
+}
+.nav-link {
+    color:#000;
+    text-decoration: none;
+    margin: 0 24px;
+    font-size: 24px;
+}
+.nav-link:hover {
+    color:red;
+    transition: .5s;
+}
+.info-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.info-block > .info-box {
+    background-color:#f6f6f6;
+    flex: 20%;
+}
+.info-block h3 {
+    font-size: 2.5em;
+    color:#4d4d4d;
+    margin: 0;
+    padding: 12px 0;
+}
+.info-block p {
+    font-size: 1.2em;
+    color:#4d4d4d;
+    margin: 0;
+    padding: 4px 6px;
+}
+
+.table {
+    padding: 25px 10vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:1vw;
+    background-color: #fff;
+    text-align: center;
+}
+.table > div {
+}
+.table > div > img {
+    max-height: 250px;
+    max-width: 250px;
+}
+.table > div > .table-title {
+    color:#4d4d4d;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 0;
+    margin: 0;
+
+}
+.table > div > .table-subtitle {
+    font-weight: 300;
+    font-size: 18px;
+    color:#4d4d4d;
+    padding: 0 7vw;
+    margin: 0 0 24px;
+}
+.table > div > .table-link {
+    background-color:#2652e0;
+    padding: 12px 24px;
+    border-radius: 9px;
+    color:#fff;
+    text-decoration: none;
+}
+
+.table__link:hover {
+    background-color: #1e3c9c;
+    transition: .5s;
+}
+.consultation {
+    background-image: url("../images/prism.png");
+    height: 100vh;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.form-box {
+    width: 30vw;
+    padding-top: 15vw;
+    margin: 0 12.5vw;
+}
+.form-title {
+    font-size: 42px;
+}
+.form-input {
+    display: block;
+    margin: 25px 0;
+    width: 25vw;
+    padding: 12px 24px;
+    border-radius: 9px;
+    border: solid 2px black;
+    opacity: .5;
+}
+.form-box label {
+    font-weight: 700;
+    font-size: 26px;
+}
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+.contacts {
+    display: flex;
+    flex-direction: row;
+}
+.contacts__left-side {
+    flex: 1;
+    order: 1;
+
+}.contacts__right-side {
+    flex: 1;
+    order: 2;
+}
+ .contacts__right-side > h2 {
+     font-size: 44px;
+     margin: 25px 50px;
+ }
+ .contacts__right-side > ul > li {
+     list-style-type: none;
+     margin: 25px 0;
+
+ }
+ .contacts__right-side > ul > li > i {
+     font-size: 42px;
+ }
+ .contacts__right-side > ul > li > span {
+     font-size: 28px;
+ }
+ .contact-address {
+     text-align: center;
+     width: 50vw;
+     margin-top: 50px;
+     font-size: 32px;
+ }
+.contact-address i {
+    animation: up-down 3s ease-in-out infinite reverse;
+
+}
+ @keyframes up-down {
+     0% {
+
+     }
+     25% {
+         transform: rotateY(180deg);
+         color:red;
+     }
+     50% {
+         transform: rotateY(-180deg);
+        color:yellow;
+     }
+     75% {
+         transform: rotateY(180deg);
+        color:green;
+     }
+     100% {
+         transform: rotateY(-180deg);
+        color:black;
+     }
+ }
